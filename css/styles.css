@@ -1,0 +1,76 @@
+/* Elementos generales */
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(119,14,20,1) 36%, rgba(80,147,159,1) 100%);
+    color: white;
+    font-family: 'Merienda', cursive;
+ }
+
+main, header, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, select {
+    width: 250px;
+    margin: 10px 5px 10px 5px;
+    float: right;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 10px auto 10px auto ;
+}
+
+/* Selectores de clase */
+
+.itemForm {
+    margin: 10px auto 10px auto;
+}
+
+.selectableAvatar {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+/* Selectores de ID */
+
+#loginForm {
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 30px;
+    flex: auto;
+}
+
+#actualAvatar {
+    float: left;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#avatarGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+
+ #logo {
+    border-radius: 5px;
+    margin-top: 2%;
+ }
+
+ #error {
+    text-align: center;
+    color: #df1616;
+    font-weight: 500;
+ }

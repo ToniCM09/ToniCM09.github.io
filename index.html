@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes & Villanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>Heroes & Villanos</header>
+    <main>
+        <!-- logo principal -->
+        <div id="logoContainer">
+            <img src="./media/lotrLogo.png" alt="Logo Señor de los Anillos" id="logo">
+        </div>
+        <!-- Formulario de entrada -->
+        <div id="loginForm">
+            <p id="error"></p>
+            <form action="game.html" id="entryForm">
+                <div class="itemForm">
+                    <label for="nick">Nick: </label>
+                    <input type="text" id="nick" name="nick">
+                </div>
+                <div class="itemForm">
+                    <label for="difficulty">Dificultad: </label>
+                    <select type="select" id="difficulty" name="difficulty">
+                        <option value="0">Selecciona una opción</option>
+                        <option value="easy">Fácil</option>
+                        <option value="normal">Normal</option>
+                        <option value="hard">Difícil</option>
+                    </select>
+                </div>
+                <div class="itemForm">
+                    <label for="numberOfCards">Nº de tarjetas: </label>
+                    <select type="select" id="numberOfCards" name="numberOfCards">
+                        <option value="0">Selecciona una opción</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>
+                </div>
+                <div class="itemForm">
+                    <label for="avatar">Avatar: </label>
+                    <div id="avatarContainer">
+                        <div class="avatarItem">
+                            <img src="./media/rohirrim.webp" alt="Avatar seleccionado" id="actualAvatar">
+                        </div>
+                    </div>
+                    <div id="avatarGrid">
+                        <div class="avatarItem">
+                            <img src="./media/rohirrim.webp" alt="Avatar seleccionable" class="selectableAvatar" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./media/deadking.webp" alt="Avatar seleccionable" class="selectableAvatar" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./media/ent.webp" alt="Avatar seleccionable" class="selectableAvatar" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./media/urukhai.webp" alt="Avatar seleccionable" class="selectableAvatar" draggable="true">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="itemForm">
+                    <input type="submit" id="play" value="Jugar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>Juego de Heroes & Villanos 2023</footer>
+    <!-- Javascript -->
+    <script src="./js/userData.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

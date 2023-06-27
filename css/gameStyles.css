@@ -1,0 +1,118 @@
+/* Elementos generales */
+body {
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(119,14,20,1) 36%, rgba(80,147,159,1) 100%);
+   color: white;
+   font-family: 'Merienda', cursive;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   justify-items: stretch;
+   align-items: stretch;
+}
+
+input, label {
+  width: 200px;
+  margin: 10px 0px 10px 10px;
+  border-radius: 5px;
+}
+
+/* Selectores de clase */
+
+.gameCard {
+   border-radius: 20px;
+   opacity: 0;
+}
+
+.topCard {
+   border-radius: 20px;
+   background-image: url('../media/reversecard.png');
+   height: 115px;
+   width: 115px;
+}
+
+.mask {
+   user-select: none; 
+   pointer-events: none;
+}
+
+.gameItem {
+   padding: 10px;
+}
+
+/* Selectores de ID */
+
+#gameContainer {
+   background-image: url('../media/gameBackground.png');
+   background-repeat: no-repeat;
+   background-position: center; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   justify-items: stretch;
+   align-items: stretch;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 5px;
+}
+
+#userContainer {
+   display: flex;
+   height: 25%;
+}
+
+#userAvatar {
+   padding: 5px;
+   border-radius: 20px;
+}
+
+#gameContainer {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   background-image: url('../media/gameBackground.png');
+   background-repeat: no-repeat;
+   background-position: center; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   justify-items: stretch;
+   align-items: stretch;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 5px;
+}
+
+#userContainer {
+   display: flex;
+   height: 25%;
+}
+
+#userAvatar {
+   padding: 5px;
+   border-radius: 20px;
+}
+
+#endGame {
+   border-radius: 5px;
+   grid-column-start: 1;
+   grid-row-start: 2;
+   position:relative;
+   z-index: 0;
+   text-align: center;
+}
+
+#soItBegins {
+   grid-column-start: 1;
+   grid-row-start: 2;
+   position:relative;
+   z-index: 1;
+}
+
+#soItBegins img {
+   border-radius: 5px;
+   width: 100%;
+   height: 100%;
+}

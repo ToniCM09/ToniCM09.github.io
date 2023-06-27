@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes & Villanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/gameStyles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header></header>
+    <main>
+        <!-- Zona de tarjetas del juego -->
+        <div id="gameContainer">
+
+        </div>
+        <!-- Zona de usuario -->
+        <div id="userContainer">
+            <div id="avatar">
+                <img id="userAvatar" src="">
+            </div>
+            <form id="form_entrada" action="juego.html">
+                <div class="itemform">
+                    <label for="score">Usuario: </label>
+                    <input type="text" id="nick" value="" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="score">Puntuación: </label>
+                    <input type="text" id="score" value="0" class="inputJuego" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="attemps">Intentos restantes: </label>
+                    <input type="text" id="attemps" value="10" class="inputJuego" readonly>
+                </div>
+            </form>
+        </div>
+        <!-- Imagen de ambientación del juego -->
+        <div id="soItBegins">
+            <img src="media/soItBegins.webp">
+        </div>
+        <!--  Fin del juego -->
+        <div id="endGame">
+            <p id="endGameText"></p>
+            <input type="submit" id="playAgain" value="Jugar de nuevo">
+            <input type="submit" id="goHome" value="Volver a inicio">
+        </div>
+    </main>
+    <!--  Pie de página -->
+    <footer></footer>
+    <!--  JavaScript -->
+    <script src="./js/userData.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>
